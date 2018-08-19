@@ -1,30 +1,33 @@
-# Paradise Papers with Neo4j and Python Folium
+# Paradise Papers with Neo4j, Altair and Folium
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jackdbd/paradise-papers-neo4j-folium/master)
+Data exploration and visualization of the Paradise Papers dataset.
 
-TODO: description
+![A screenshot of the interactive map](https://github.com/jackdbd/paradise-papers-neo4j-folium/blob/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
 
-TODO: screenshot/GIF
+![A GIF that shows how to use the interactive map](https://github.com/jackdbd/paradise-papers-neo4j-folium/blob/master/screenshots/map-demo.gif "Demo of the Folium map")
 
-
-## Run the notebook with Binder
-
-[Binder](https://github.com/jupyterhub/binderhub) builds a docker image from a git repository + commit, so you can run the notebook beni-confiscati.ipynb in the cloud, without installing anything on your machine.
+![5 most popular offshore jurisdictions](./screenshots/popular-offshore-jurisdictions.svg, "popular-offshore-jurisdictions")
 
 
 ## Installation
 
-If you want to run the notebook locally, you need to create a conda environment. You can use either Miniconda or Anaconda.
+If you want to run the notebook locally, you can create a conda environment.
 
 Create and activate a new conda environment:
 
+```
 conda create --name paradise-papers python=3.6 --yes
 source activate paradise-papers
+```
+
 Install all the dependencies (this might take a while, go grab a cup of coffee):
 
 ```sh
-conda install -c conda-forge jupyter python-dotenv pandas matplotlib neo4j-python-driver folium -y
+conda install -c conda-forge jupyter neo4j-python-driver pandas altair folium -y
 ```
+
+*Note:* you don't need to install Neo4j. The notebook connects to a Neo4j sandbox that should be always available.
+
 
 ## Usage
 
@@ -32,18 +35,6 @@ When all dependencies have been installed, run the notebook:
 
 ```sh
 jupyter notebook
-```
-
-Start the Neo4j daemon with:
-
-```sh
-sudo service neo4j start
-```
-
-Check that Neo4j is up and running by visiting:
-
-```
-http://localhost:7474/browser/
 ```
 
 
@@ -57,10 +48,12 @@ conda env export > environment.yml
 To remove this conda environment, run:
 
 ```sh
-conda env remove -n paradise-papers
+conda env remove -n paradise-papers -y
 ```
 
 
 ## Credits
 
-Inspired by [William Lyon's article](https://www.lyonwj.com/2017/11/28/geocoding-paradise-papers-neo4j-spatial-visualization/).
+This work was inspired by [William Lyon's tutorial](https://www.lyonwj.com/2017/11/28/geocoding-paradise-papers-neo4j-spatial-visualization/).
+
+The [Paradise Papers dataset](https://offshoreleaks.icij.org/pages/database) is released by The International Consortium of Investigative Journalists. The dataset is licensed under the [Open Database License](https://opendatacommons.org/licenses/odbl/1.0/) and its contents under [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/3.0/).
