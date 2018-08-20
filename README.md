@@ -2,11 +2,17 @@
 
 Data exploration and visualization of the Paradise Papers dataset.
 
-![A screenshot of the interactive map](https://github.com/jackdbd/paradise-papers-neo4j-folium/blob/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
+![A screenshot of the interactive map](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
 
-![A GIF that shows how to use the interactive map](https://github.com/jackdbd/paradise-papers-neo4j-folium/blob/master/screenshots/map-demo.gif "Demo of the Folium map")
+![A screenshot of the interactive map](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
 
-![5 most popular offshore jurisdictions](./screenshots/popular-offshore-jurisdictions.svg, "popular-offshore-jurisdictions")
+![A GIF that shows how to use the interactive map](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/map-demo.gif "Demo of the Folium map")
+
+![5 most popular offshore jurisdictions](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/popular-offshore-jurisdictions.svg "popular-offshore-jurisdictions")
+
+![5 most popular offshore jurisdictions](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/popular-offshore-jurisdictions.png "popular-offshore-jurisdictions")
+
+![5 most popular offshore jurisdictions](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/popular-offshore-jurisdictions.png "popular-offshore-jurisdictions")
 
 
 ## Installation
@@ -23,7 +29,7 @@ source activate paradise-papers
 Install all the dependencies (this might take a while, go grab a cup of coffee):
 
 ```sh
-conda install -c conda-forge jupyter neo4j-python-driver pandas altair folium -y
+conda install -c conda-forge jupyter neo4j-python-driver pandas altair vega_datasets notebook vega folium -y
 ```
 
 *Note:* you don't need to install Neo4j. The notebook connects to a Neo4j sandbox that should be always available.
