@@ -2,17 +2,11 @@
 
 Data exploration and visualization of the Paradise Papers dataset.
 
-![A screenshot of the interactive map](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
-
 ![A screenshot of the interactive map](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/map-screenshot.png "Screenshot of the Folium map")
 
 ![A GIF that shows how to use the interactive map](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/map-demo.gif "Demo of the Folium map")
 
 ![5 most popular offshore jurisdictions](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/popular-offshore-jurisdictions.svg "popular-offshore-jurisdictions")
-
-![5 most popular offshore jurisdictions](https://github.com/jackdbd/paradise-papers-neo4j/blob/master/screenshots/popular-offshore-jurisdictions.png "popular-offshore-jurisdictions")
-
-![5 most popular offshore jurisdictions](https://raw.githubusercontent.com/jackdbd/paradise-papers-neo4j/master/screenshots/popular-offshore-jurisdictions.png "popular-offshore-jurisdictions")
 
 
 ## Installation
